@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="box">
@@ -18,13 +19,47 @@
   <span class="circle">
     <span class="circle-inner"></span>
   </span>
-            <span class="login">login</span>
-            <span class="register">Register</span>
+            <span class="login">sign in</span>
+            <span class="register">sign up</span>
         </label>
     </div>
 
     <div class="card">
-        <div class="card-face card-face-front">login</div>
+        <div class="card-face card-face-front">
+            <div class="input-container mb">
+                <div class="icon-wrapper"><i class="fa fa-user"></i></div>
+                <input name="data[User][username]" required="required" placeholder="Username" maxlength="255" type="text" id="UserUsername" class="form-input">
+            </div>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-lock"></i></div>
+                <input name="data[User][password]" required="required" placeholder="Password" type="password" id="UserPassword" class="form-input">
+            </div>
+
+            <div class="check-password">
+                <div class="input-container">
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Remember Me?" class="remember">
+                    <label for="checkbox">Remember Me?</label>
+                </div>
+                <div class="input-container">
+                    <label class="forget-password">Forget password?</label>
+                </div>
+            </div>
+            <div class="input-container">
+                <input class="sign-in" type="submit" value="Sign in">
+                <span class="icon-arrow-right"><i class="fa fa-angle-right"></i></span>
+            </div>
+            <div>
+                <div class="text-social-media"><span>or sign in with</span></div>
+                <div class="social-media">
+                    <div><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-google" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </div>
         <div class="card-face card-face-back">Register</div>
     </div>
 </div>
