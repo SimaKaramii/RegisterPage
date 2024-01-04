@@ -148,7 +148,7 @@ body{
     padding: 4px;
 }
 .form-input{
-    background: transparent;
+    background: #f4eeff;
     border: 1px solid #424874;
     width: 100%;
     padding: 0 10px;
@@ -265,4 +265,63 @@ body{
     #box{
         padding: 4%;
     }
+}
+.modal{
+    display: none;
+    background: #f4eeffeb;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    color: #424874;
+    cursor: pointer;
+}
+.model-content{
+    position: absolute;
+    width: 350px;
+    height: 290px;
+    background: #f4eeff;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 1rem;
+}
+.model-content h3{
+    color: #424874;
+}
+.model-content p{
+    font-size: 11px;
+    color: #424874;
+    margin-bottom: 2rem;
+}
+.modal .icon-wrapper{
+    width: 35px;
+}
+#text{
+    color: #c50000;
+    font-size: 10px;
+    margin: 5px 0;
+    height: 15px;
+}
+.Send{
+    color : #DCD6F7;
+    background: #424874;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    margin: 3em 0;
+
 }

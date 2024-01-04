@@ -41,7 +41,7 @@
                     <label for="checkbox">Remember Me?</label>
                 </div>
                 <div class="input-container">
-                    <label class="forget-password">Forget password?</label>
+                    <label class="forget-password" onclick="OpenModal()">Forget password?</label>
                 </div>
             </div>
             <div class="input-container">
@@ -61,6 +61,21 @@
             </div>
         </div>
         <div class="card-face card-face-back">Register</div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-close" onclick="CloseModal()"><i class="fa fa-window-close" aria-hidden="true"></i></div>
+        <div class="model-content">
+            <h3>Forgot your password?</h3>
+            <p>Enter your email address to reset your password</p>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <input required="required" placeholder="Email" type="Email" id="email" class="form-input">
+            </div>
+            <div id="text"></div>
+            <div class="input-container">
+                <input class="Send" type="submit" value="Send" onclick="SendResetEmail()">
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/script.js"></script>
