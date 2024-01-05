@@ -16,9 +16,9 @@
         <input id="card-switch" type="checkbox" class="checkbox" />
 
         <label for="card-switch" class="switch" >
-  <span class="circle">
-    <span class="circle-inner"></span>
-  </span>
+          <span class="circle">
+            <span class="circle-inner"></span>
+          </span>
             <span class="login">sign in</span>
             <span class="register">sign up</span>
         </label>
@@ -60,7 +60,33 @@
                 </div>
             </div>
         </div>
-        <div class="card-face card-face-back">Register</div>
+        <div class="card-face card-face-back">
+            <p>Please fill in this form to create an account!</p>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-user"></i></div>
+                <input name="username" required="required" placeholder="Username" type="text" id="user" class="form-input">
+            </div>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-envelope-o"></i></div>
+                <input name="data[User][password]" required="required" placeholder="Email" type="email" id="emailadderss" class="form-input">
+            </div>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-lock"></i></div>
+                <input name="" required="required" placeholder="Password" type="password" id="Password" class="form-input">
+            </div>
+            <div class="input-container">
+                <div class="icon-wrapper"><i class="fa fa-lock"></i></div>
+                <input name="" required="required" placeholder="Confirm password" type="password" id="rePassword" class="form-input">
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="checkboxTerms" name="checkbox" value="Remember Me?" class="remember">
+                <label for="checkbox"> I accept the <a>Terms of Use & Privacy Policy</a></label>
+            </div>
+            <div id="TextSignUp"></div>
+            <div class="input-container">
+                <input class="sign-in" type="submit" value="Sign Up" onclick="SendSignUp()">
+            </div>
+        </div>
     </div>
     <div class="modal" id="modal">
         <div class="modal-close" onclick="CloseModal()"><i class="fa fa-window-close" aria-hidden="true"></i></div>
