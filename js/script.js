@@ -1,5 +1,5 @@
 
-var element = document.querySelector('#card-switch');
+var element = document.querySelector('#Sign-in');
 element.addEventListener('change', (e) => {
     var card = document.querySelector('.card')
     e.target.checked ? card.classList.add('is-flipped') : card.classList.remove('is-flipped')

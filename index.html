@@ -11,20 +11,17 @@
 </head>
 <body>
 <div id="box">
-
-    <div class="switch_container">
-        <input id="card-switch" type="checkbox" class="checkbox" />
-
-        <label for="card-switch" class="switch" >
-          <span class="circle">
-            <span class="circle-inner"></span>
-          </span>
-            <span class="login">sign in</span>
-            <span class="register">sign up</span>
+    <!--Switch-->
+    <div class="btn-container">
+        <label class="switch btn-page-mode-switch">
+            <input type="checkbox" name="Sign-in" id="Sign-in" value="1">
+            <label for="Sign-in" data-on="Sign up" data-off="Sign in" class="btn-page-mode-switch-inner"></label>
         </label>
     </div>
-
+    <!--Switch-->
+    <!--card-->
     <div class="card">
+        <!--Sign in-->
         <div class="card-face card-face-front">
             <div class="input-container mb">
                 <div class="icon-wrapper"><i class="fa fa-user"></i></div>
@@ -60,6 +57,8 @@
                 </div>
             </div>
         </div>
+        <!--Sign in-->
+        <!--Sign up-->
         <div class="card-face card-face-back">
             <p>Please fill in this form to create an account!</p>
             <div class="input-container">
@@ -80,14 +79,17 @@
             </div>
             <div class="input-container">
                 <input type="checkbox" id="checkboxTerms" name="checkbox" value="Remember Me?" class="remember">
-                <label for="checkbox"> I accept the <a>Terms of Use & Privacy Policy</a></label>
+                <label for="checkboxTerms"> I accept the <a>Terms of Use & Privacy Policy</a></label>
             </div>
             <div id="TextSignUp"></div>
             <div class="input-container">
                 <input class="sign-in" type="submit" value="Sign Up" onclick="SendSignUp()">
             </div>
         </div>
+        <!--Sign up-->
     </div>
+    <!--card-->
+    <!--Forget Password-->
     <div class="modal" id="modal">
         <div class="modal-close" onclick="CloseModal()"><i class="fa fa-window-close" aria-hidden="true"></i></div>
         <div class="model-content">
@@ -103,6 +105,7 @@
             </div>
         </div>
     </div>
+    <!--Forget Password-->
 </div>
 <script src="js/script.js"></script>
 </body>
